@@ -27,6 +27,12 @@ resource "aws_instance" "uat" {
   }
 }
 
+
+"""
+Removing the backend 
+"""
+
+/*
 terraform {
   backend "s3" {
     bucket = "works-up-and-running-state"
@@ -36,3 +42,4 @@ terraform {
     encrypt = true
   }
 }
+*/

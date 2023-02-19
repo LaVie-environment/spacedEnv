@@ -28,9 +28,8 @@ resource "aws_instance" "uat" {
 }
 
 
-"""
-Removing the backend 
-"""
+
+# Removing the backend 
 
 /*
 terraform {

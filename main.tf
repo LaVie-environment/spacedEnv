@@ -46,3 +46,13 @@ resource "aws_instance" "uat" {
     Name = var.instance_name
   }
 }
+
+terraform {
+  backend "s3" {
+    bucket = "works-up-and-running-state"
+    key = "workspaces-uat/terraform.tfstate"
+    region = "eu-west-1"
+    dynamodb_table = "works-up-and-running-state"
+    encrypt = true
+  }
+}
